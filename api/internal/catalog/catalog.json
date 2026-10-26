@@ -1,0 +1,127 @@
+{
+  "_note": "Admin-only rate card. Prices in rupees, before GST. Used to draft quotations; never sent to the public site.",
+  "currency": "INR",
+  "services": [
+    {
+      "id": "website",
+      "name": "Website",
+      "icon": "globe",
+      "blurb": "Fast, mobile-first websites that turn visitors into calls, orders and bookings.",
+      "options": [
+        { "id": "starter", "name": "Starter", "min": 12000, "max": 20000, "weeks": "1 week", "includes": ["1–5 pages", "Mobile-friendly", "Contact form, map, WhatsApp button"] },
+        { "id": "business", "name": "Business", "min": 25000, "max": 40000, "weeks": "2–3 weeks", "includes": ["Up to 10 pages", "Animations and gallery", "Blog or news", "Basic SEO"] },
+        { "id": "ordering", "name": "Ordering or booking", "min": 45000, "max": 75000, "weeks": "3–4 weeks", "includes": ["Menu or catalogue", "Cart and orders", "Live order tracking", "Owner panel"] },
+        { "id": "store", "name": "Online store", "min": 60000, "max": 120000, "weeks": "4–6 weeks", "includes": ["Products and stock", "Payment gateway", "Invoices", "Delivery"] }
+      ]
+    },
+    {
+      "id": "app",
+      "name": "Mobile app",
+      "icon": "smartphone",
+      "blurb": "One codebase, Android and iPhone. Logins, notifications, payments and an owner dashboard.",
+      "options": [
+        { "id": "simple", "name": "Simple app", "min": 35000, "max": 60000, "weeks": "3–4 weeks", "includes": ["Uses your website or API", "5–10 screens"] },
+        { "id": "full", "name": "Full app", "min": 60000, "max": 120000, "weeks": "5–8 weeks", "includes": ["Logins and roles", "Push notifications", "Payments", "Owner dashboard"] }
+      ],
+      "platforms": [
+        { "id": "android", "name": "Android", "multiplier": 1.0, "extraWeeks": "", "storeFee": "Play Store publishing ₹5,000 + $25 Google fee once" },
+        { "id": "ios", "name": "iPhone (iOS)", "multiplier": 1.0, "extraWeeks": "+1–2 weeks", "storeFee": "App Store publishing ₹8,000 + $99 a year to Apple" },
+        { "id": "both", "name": "Android + iPhone", "multiplier": 1.4, "extraWeeks": "+1–2 weeks", "storeFee": "Both stores: ₹13,000 + Google $25 once + Apple $99 a year" }
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google Business listing",
+      "icon": "map-pin",
+      "blurb": "Show up on Google Maps and Search with a verified profile, photos and a review kit.",
+      "options": [
+        { "id": "listing", "name": "Listing and verification", "min": 3000, "max": 5000, "weeks": "1 day + 1–14 days Google verification", "includes": ["Profile created and verified", "Map pin, hours, description", "Photos and logo"] },
+        { "id": "listing_reviews", "name": "Listing + reviews kit", "min": 4000, "max": 6000, "weeks": "2–3 days + Google verification", "includes": ["Everything in Listing", "Review link and QR standee", "Review button on your site"] }
+      ]
+    },
+    {
+      "id": "seo",
+      "name": "SEO",
+      "icon": "search",
+      "blurb": "Rank for what your customers search, with Search Console set up and monthly reports.",
+      "options": [
+        { "id": "basic", "name": "SEO setup (one time)", "min": 5000, "max": 10000, "weeks": "1 week", "includes": ["Search Console and sitemap", "Titles, meta and schema", "Speed fixes"] },
+        { "id": "monthly", "name": "SEO growth (monthly)", "min": 6000, "max": 12000, "monthly": true, "weeks": "Results in 2–4 months", "includes": ["Keyword plan", "2 articles a month", "Local citations", "Monthly ranking report"] }
+      ]
+    },
+    {
+      "id": "ads",
+      "name": "Google & Facebook ads",
+      "icon": "megaphone",
+      "blurb": "Ads on Google, Instagram and Facebook that bring calls and orders, tracked to the rupee.",
+      "options": [
+        { "id": "google", "name": "Google Ads", "min": 8000, "max": 15000, "monthly": true, "setup": 5000, "weeks": "Live in 3–5 days", "includes": ["Search and Maps campaigns", "Call and WhatsApp tracking", "Weekly tuning"] },
+        { "id": "meta", "name": "Facebook & Instagram ads", "min": 8000, "max": 15000, "monthly": true, "setup": 5000, "weeks": "Live in 3–5 days", "includes": ["Ad creatives and reels", "Local audience targeting", "Lead forms"] },
+        { "id": "both", "name": "Google + Meta ads", "min": 14000, "max": 25000, "monthly": true, "setup": 8000, "weeks": "Live in 3–5 days", "includes": ["Both platforms", "One monthly report", "Ad spend paid by you, directly"] }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social media",
+      "icon": "instagram",
+      "blurb": "Posts, reels and captions in Hindi and English, every month.",
+      "options": [
+        { "id": "starter", "name": "Starter", "min": 6000, "max": 8000, "monthly": true, "weeks": "Starts in 1 week", "includes": ["8 posts", "4 stories"] },
+        { "id": "growth", "name": "Growth", "min": 12000, "max": 18000, "monthly": true, "weeks": "Starts in 1 week", "includes": ["12 posts", "8 reels", "Hindi + English captions", "Monthly report"] },
+        { "id": "pro", "name": "Pro", "min": 25000, "max": 40000, "monthly": true, "weeks": "Starts in 1 week", "includes": ["20 posts", "12 reels", "Ads management", "Replies to messages"] }
+      ]
+    },
+    {
+      "id": "brand",
+      "name": "Logo & brand",
+      "icon": "palette",
+      "blurb": "A logo, colours and icons that look good on a signboard and a phone screen.",
+      "options": [
+        { "id": "kit", "name": "Logo and brand kit", "min": 5000, "max": 15000, "weeks": "1 week", "includes": ["Logo options", "Colours and fonts", "App icon and social images"] }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "id": "lite",
+      "name": "Lite",
+      "for": "Carts, small shops, tight budgets",
+      "price": 35000,
+      "monthly": 800,
+      "weeks": "2–3 weeks",
+      "includes": ["Website with online ordering", "Google Business listing", "Reviews kit with QR standee", "Domain and email setup"]
+    },
+    {
+      "id": "complete",
+      "name": "Complete",
+      "for": "Restaurants and shops that want it all",
+      "price": 85000,
+      "monthly": 2000,
+      "weeks": "4–6 weeks",
+      "featured": true,
+      "includes": ["Everything in Lite", "Logo and brand kit", "Android app with owner tablet alerts", "Sales and profit dashboard", "Staff and owner logins"]
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "for": "Businesses ready to advertise",
+      "price": 99000,
+      "monthly": 16000,
+      "weeks": "4–6 weeks, ads from week 2",
+      "includes": ["Everything in Complete", "SEO setup", "Google + Meta ads management", "Monthly growth report"]
+    }
+  ],
+  "maintenance": [
+    { "id": "basic", "name": "Basic", "min": 1000, "max": 1500, "includes": ["Hosting kept running", "Security updates and backups", "1 small change a month"] },
+    { "id": "standard", "name": "Standard", "min": 2500, "max": 4000, "includes": ["Basic, plus up to 3 hours of changes", "Menu and price updates", "Monthly health check"] },
+    { "id": "premium", "name": "Premium", "min": 6000, "max": 10000, "includes": ["Standard, plus app updates", "Up to 8 hours a month", "Same-day fixes"] }
+  ],
+  "terms": [
+    "40% to start, 40% when the website is live, 20% at app handover.",
+    "Two rounds of design changes included.",
+    "You own your domain, store listings and content, in your name.",
+    "Third-party fees (domain, store fees, ad spend, SMS, WhatsApp, gateway) are paid by you at cost.",
+    "30 days of free bug fixes after launch.",
+    "Prices exclude GST."
+  ]
+}
