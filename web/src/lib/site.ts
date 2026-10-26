@@ -1,7 +1,7 @@
 // Everything brand-specific in one place. Swap these when the agency name is final.
 export const site = {
-  name: "Parashar Digital",
-  short: "PD",
+  name: "Ampli Digital World",
+  short: "A",
   tagline: "Websites, apps and Google growth for Indian businesses",
   owner: "Vikash Parashar",
   email: "gowithvikash@gmail.com",
